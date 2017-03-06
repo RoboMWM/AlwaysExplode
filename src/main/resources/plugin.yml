@@ -1,0 +1,6 @@
+name: AlwaysExplode
+version: ${project.version}
+website: https://github.com/robomwm/AlwaysExplode
+author: RoboMWM
+main: to.us.tf.AlwaysExplode.AlwaysExplode
+loadbefore: [GriefPrevention]
