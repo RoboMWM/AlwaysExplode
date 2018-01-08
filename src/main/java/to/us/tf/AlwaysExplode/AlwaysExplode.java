@@ -1,5 +1,6 @@
 package to.us.tf.AlwaysExplode;
 
+import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -21,6 +22,8 @@ public class AlwaysExplode extends JavaPlugin implements Listener
     @EventHandler(priority = EventPriority.LOWEST)
     void onExplodeB4PlogenzGetIt(EntityExplodeEvent event)
     {
+        if (event.getEntity().getType() != EntityType.CREEPER) //only creepers are permissible
+            return;
         event.setCancelled(true); //fake 'em out
     }
 

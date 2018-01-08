@@ -6,7 +6,7 @@
 
     <groupId>to.us.tf</groupId>
     <artifactId>AlwaysExplode</artifactId>
-    <version>1.0</version>
+    <version>1.0.only-creepers</version>
     <repositories>
         <repository>
             <id>paper-repo</id>
